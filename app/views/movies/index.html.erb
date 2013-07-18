@@ -1,0 +1,14 @@
+<h1>Welcome to RetFlix! </h1>
+<h2>See our collection of movies below</h2>
+
+<%= form_tag '/movies/search', method: "POST" do %>
+	<%= label_tag :query, "Search:" %>
+	<%= text_field_tag :query, params[:query] %>
+	<%= submit_tag "Search" %>
+<% end %>
+
+<br/>
+
+<div>
+<%= render :partial => 'display' %>
+</div>

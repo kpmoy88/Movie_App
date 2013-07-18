@@ -1,0 +1,12 @@
+<h1><%= @movie.title %></h1>
+<h4>Released: </h4>
+<%= @movie.year_released %>
+<h4>Rating: </h4>
+<%= @movie.rating %>
+<h4>Description: </h4>
+<p><%= @movie.description %></p>
+
+</br>
+
+<%= link_to 'Edit', edit_movie_path(@movie) %>
+<%= link_to 'Home', root_path %>
